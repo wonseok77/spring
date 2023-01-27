@@ -31,6 +31,7 @@ Advisor는 스프링 AOP에만 있는 것인데, 관점 지향에서 '관점'을
 로깅, 트랜잭션 처리 등이 Aspect 의 좋은 예이다.  
 Spring AOP는 Aspect를 일반적인 자바 클래스로 구현한다.  
 
-6. Weaving
+6. Weaving  
+Advice를 핵심 로직 코드에 적용하는 것   
 
-Advice를 핵심 로직 코드에 적용하는 것  
+
