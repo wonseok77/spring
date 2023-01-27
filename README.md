@@ -25,3 +25,12 @@ Advice의 위빙 정의는 Pointcut을 대상으로 설정한다
 4. Advisor  
 Adive와 Pointcut을 하나로 묶어 다루는 것을 Advisor라고 한다.  
 Advisor는 스프링 AOP에만 있는 것인데, 관점 지향에서 '관점'을 나타내는 개념이라고 할 수 있다.  
+
+5. Aspect  
+여러 객체에 공통으로 적용되는 공통 관심 사항을 Aspect 이라 한다.  
+로깅, 트랜잭션 처리 등이 Aspect 의 좋은 예이다.  
+Spring AOP는 Aspect를 일반적인 자바 클래스로 구현한다.  
+
+6. Weaving
+
+Advice를 핵심 로직 코드에 적용하는 것  
