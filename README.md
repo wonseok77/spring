@@ -36,3 +36,12 @@ Advice를 핵심 로직 코드에 적용하는 것
 
 ** 시험 나옴 **  
 MVC에서 원래는 controller가 요청을 다 받는데 dispatcher Servlet이 spring framework에서는 client의 요청을 받는다  
+
+
+
+# spring boot  
+intelliJ community Edition 다운  
+JDK 17다운  
+https://start.spring.io 에서 gradle 로 project생성  
+[File] - [Project structure]에서 JDK 17로 설정변경  
+[File] - [Setting(나는 윈도우라 perferences아님)] - [Build, Execution, Deployment] - [Build Tools] 에서 JDK 17이랑, 다른 셋팅 intelliJ IDEA로 변경
