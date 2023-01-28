@@ -44,4 +44,22 @@ intelliJ community Edition 다운
 JDK 17다운  
 https://start.spring.io 에서 gradle 로 project생성  
 [File] - [Project structure]에서 JDK 17로 설정변경  
-[File] - [Setting(나는 윈도우라 perferences아님)] - [Build, Execution, Deployment] - [Build Tools] 에서 JDK 17이랑, 다른 셋팅 intelliJ IDEA로 변경
+[File] - [Setting(나는 윈도우라 perferences아님)] - [Build, Execution, Deployment] - [Build Tools] 에서 JDK 17이랑, 다른 셋팅 intelliJ IDEA로 변경  
+
+
+스프링 부트 라이브러리  
+spring-boot-starter-web
+- spring-boot-starter-tomcat: 톰캣 (웹서버)  
+- spring-webmvc: 스프링 웹 MVC  
+spring-boot-starter-thymeleaf: 타임리프 템플릿 엔진(View)  
+spring-boot-starter(공통): 스프링 부트 + 스프링 코어 + 로깅
+  spring-boot  
+    spring-core  
+  spring-boot-starter-logging  
+    logback, slf4j
+테스트 라이브러리  
+spring-boot-starter-test  
+  junit: 테스트 프레임워크
+  mockito: 목 라이브러리  
+  assertj: 테스트 코드를 좀 더 편하게 작성하게 도와주는 라이브러리  
+  spring-test: 스프링 통합 테스트 지원  
