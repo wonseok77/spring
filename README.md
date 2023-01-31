@@ -66,4 +66,37 @@ spring-boot-starter-test
 
 - 명령 프롬프트에서 실행하기  
 -  디렉터리 접근 후 설명 따라하기. 
+  
+ ===========================0131 
+시작은 pom.xml, web.xml, tomcat add실행시 실행되는것 xml을 고치면 서버를 껏다켜야 한다  
+context param을 통해 listner에 등록  
+web application context, bean객체 ?  
 
+  
+data source설정 따로 mapper 에 mybatis를 사용하기위한 sqlsessionfactory생성  
+
+시작은 HeidiSQL에서 MariaDB TABLE 생성  
+dto 객체 생성 Member.java mapper의 orm에 매핑시킬 클래스로 사용, column이랑 똑같은 이름으로 객체 멤버 생성  
+join.jsp input type과 같은 이름으로 생성, 기본생성자로 렛츠고  
+
+member.xml, 회원가입과 로그인을 위한 SQL Query만 작성  
+로그인 처리를 위한 Select member, 회원가입을 위한 insert into  join.jsp form에 "./join" post  
+request 매핑 join으로 간다 (회원가입 버튼을 누르면 )  
+
+MemberController생성  Join을 위한 GET, POST 각각만들기
+그 전에, mapper(SQL)을 만들었다면 그것을 위한 DAO를 만들어 줘야한다  @Autowired @Repository활용하기  
+(mapper 실행 메서드인것같음) SQLFACTORYSESSIONBEAN이 AUTOWIRED(주입) 된것  
+
+MemberController에 memberDAO @Autowired로 불러온다 
+class 명과 input tag의 name이 같아야한다
+
+회원가입성공하면 로그인화면으로 실패했을땐 error페이지로  
+로그인 화면은 id와 password를 가지고 넘어감
+@RequestParam으로 Controller로 온다  INT를 쓰면 안된다 INTEGER?
+
+1. DB 테이블 만들고  
+2. board.java에 getter setter 만들고
+3.  board.xml에 dtd 넣는다  그다음 SQL Query작성한다  
+4.  dao 패키지 만들고 DAO interface생성 및 상속받은 Impl class  생성   
+5. Model 은 DB접속을 포함한 Business로직 Service라는 표현을 많이 쓴다
+6. com.kt.board.service 패키지 생성
