@@ -100,3 +100,6 @@ class 명과 input tag의 name이 같아야한다
 4.  dao 패키지 만들고 DAO interface생성 및 상속받은 Impl class  생성   
 5. Model 은 DB접속을 포함한 Business로직 Service라는 표현을 많이 쓴다
 6. com.kt.board.service 패키지 생성
+
+5
+6
