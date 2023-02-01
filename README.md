@@ -103,3 +103,12 @@ class 명과 input tag의 name이 같아야한다
 
 5
 6
+
+
+1. lagacy project 생성
+2. pom.xml에 dependency 붙혀넣기
+3. 인코딩 처리 web.xml에 추가하기 filter 태그 부분
+4. context.param web.xml에서 listener에 넘겨주기
+5. sql session factory bean에다가 mapper라는 이름의 xml파일의 경로를 연결 dto class의 alias 설정이 root context.xml(DB와 mapper를 연결해주는 아이다)에 있다
+6. root context.xml sqlsession factory 기존 코드에서 3,4번째줄 복사하기 db properties를 어디다가 넣을것인가 ? 경로 지정
+7. mapper생성(board2.xml) 경로지정 신경쓰고, DOC type이랑 mapper 껍데기 만들기, SQL 쿼리 쓰기
