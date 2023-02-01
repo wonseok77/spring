@@ -112,3 +112,11 @@ class 명과 input tag의 name이 같아야한다
 5. sql session factory bean에다가 mapper라는 이름의 xml파일의 경로를 연결 dto class의 alias 설정이 root context.xml(DB와 mapper를 연결해주는 아이다)에 있다
 6. root context.xml sqlsession factory 기존 코드에서 3,4번째줄 복사하기 db properties를 어디다가 넣을것인가 ? 경로 지정
 7. mapper생성(board2.xml) 경로지정 신경쓰고, DOC type이랑 mapper 껍데기 만들기, SQL 쿼리 쓰기
+
+
+servlet context 에서 component-scan 경로 잘 설정하기(어노테이션 불러오는 기능)
+pojo 순수자바클래스(상속받지않은)
+ioc 역제어컨테이너 beam객체의 생성 초기화 소멸 같은 기초적인 것들을 관리하는 아이다
+
+Ajax는 ~~~  꼼꼼함 대강대강이아니라 꼼꼼함 설계를 대충하고 들어가면 큰일남 web은 다른페이지와 연동이되기때문에 설계연동이 이루어진다.
+상호작용을 잘한다...
