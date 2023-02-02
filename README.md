@@ -39,7 +39,7 @@ MVC에서 원래는 controller가 요청을 다 받는데 dispatcher Servlet이 
   
 advice(언제), joinpoint(어디) -여러개-> pointcut
   
-Advisor(관점을 나타내는 개념) advice + pointcut  
+Advisor(관점을 나타내는 개념) = advice + pointcut  
    
 Aspect : 공통관심사항    
 weaving : advice 적용  
