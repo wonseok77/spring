@@ -35,9 +35,14 @@ Spring AOP는 Aspect를 일반적인 자바 클래스로 구현한다.
 Advice를 핵심 로직 코드에 적용하는 것   
 
 ** 시험 나옴 **  
-MVC에서 원래는 controller가 요청을 다 받는데 dispatcher Servlet이 spring framework에서는 client의 요청을 받는다  
-
-
+MVC에서 원래는 controller가 요청을 다 받는데 dispatcher Servlet이 spring framework에서는 client의 요청을 받는다    
+  
+advice(언제), joinpoint(어디) -여러개-> pointcut
+  
+Advisor(관점을 나타내는 개념) advice + pointcut  
+   
+Aspect : 공통관심사항    
+weaving : advice 적용  
 
 # spring boot  
 intelliJ community Edition 다운  
