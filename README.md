@@ -128,3 +128,55 @@ Ajax는 ~~~  꼼꼼함 대강대강이아니라 꼼꼼함 설계를 대충하고
 @
 ajax Optional
 webapp 안에 폴더에 image 넣으면 다이렉트로 읽어오기 가능하다
+  
+=================필기시험
+spring boot 만이 가지고 있는 api가 있는데 starter가 붙어있다 build.gradle에 main이 있다는것과 같다(<-> lagacy)
+test가 있다 단위 test  
+SpringBootApplication (meta class라고 생각하면된다)
+  
+    
+SpringBootConfiguration -> Configuration 설정정보
+EnableAutoConfiguration -> 자동으로 객체를 생성시키는 설정파일  
+ComponentScan  -> 특정 패키지 밑에있는 모든 annotation (Service, Controller, ...등)   
+  
+jar third party에서 제공하는 library API JAVA쓰는경우가 많으니까 API를 JAR형태로 제공    
+starter가 있으니까 단위 test가 가능하다  
+
+가장 큰 차이점  (SpringFrameWork, Spring lagacy project vs Spring boot)
+tomcat을 내장하고있다(Spring boot)  
+
+AOP와 관련된 정의  
+Adivice  
+joinpoint와 pointcut의 차이(joinpoint의 묶음을 pointcut)  
+aspect   
+
+transaction annotation은 (insert, delete, update)등을 할때 달아야한다  
+  
+  
+commit rollback; 실제 transaction연산을 물리적으로 변경하는 명령어    
+쿼리문 2개로 만들어놨다가 rollback시 나머지 하나 활용 JDBC는 connection에 autocommit  
+transaction annotation만으로 자동 commit rollback이 된다  
+하나라도 실패(exception) 하면 자동 rollback이 된다, 성공했을경우 자동 commit     
+  
+@Controller 골라서 할 수 있다  
+@RestController(의 특징) 는 무조건 데이터를 반환한다  
+
+@RestFramework url에 
+<a href = "  /test/10">
+   @GetMapping("/test/{n}")
+   public   (@pathVariable Int~)
+   restpull api는 pathvariable과 연결된다 !
+   
+   이것을 rest pull 요청이라고 한다  
+   get put post delete 4가지 방식이 있다  
+   post는 데이터를 넣어서 와서 url이 달라지지 않는다  
+   ajax에 넣어서 보낼때도 body에 넣어서 보낸다 post는  
+   foot은 변경하는것을 foot이라고 한다  
+   무엇을 변경할거라고 해서 get put delete url에 path variable  
+   put과 post는 body까지 같이 rest pull api형태는 프로젝트하다보면 공공데이터가 어마어마하게많다
+   다 rest형태의 api를 이용하는 형태이다
+   
+   
+   
+
+  
