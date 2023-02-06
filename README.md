@@ -189,3 +189,8 @@ transaction annotation만으로 자동 commit rollback이 된다
      
    가로채기(intercepter어쩌고)  
    내일은 timeleaf어 쩌고  
+   
+   dispatcher servlet spring영역  
+   인터셉터의 메소드랑  
+   AOP의 어노테이션 종류가 뭐가 있는지 시험에 나온다 !  
+   AOP @AROUND @AfterReturning @AfterThrowing afterCompletion 등등  
