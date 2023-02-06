@@ -177,6 +177,15 @@ transaction annotation만으로 자동 commit rollback이 된다
    다 rest형태의 api를 이용하는 형태이다
    
    
-   
-
-  
+   jpa는 DB에 의존적이다. ANSI 표준 SQL문 JOIN이런거 Oracle, MySQL 시험볼때 공무원시험볼때는 ANSI JOIN을 써야한다 표준 SQL문이라고 한다. 다 표준이기에 돌아간다 .  
+   AUTO INCREMENT는 MYSQL, MARIADB but Oracle은 안된다 Sequence라는걸 써야한다 기본적으로 ANSI JOIN을 쓰지않는 한 DB에 의존적이라고 할 수 있다
+   Direct로 갖다 쓸 수 있다 Application properties에  
+      
+      
+   spring.jpa.database-platform=org.hibernate.dialect.MariaDB103Dialect   
+   Dialect는 특정 DB에 종속적인 기능을 사용하는 것이다   
+      
+   file upload 할 때 반드시 inity file // enctype = "multipart/form-data"  
+     
+   가로채기(intercepter어쩌고)  
+   내일은 timeleaf어 쩌고  
