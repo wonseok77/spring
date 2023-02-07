@@ -198,3 +198,6 @@ transaction annotation만으로 자동 commit rollback이 된다
    forward는 데이터를 공유한다
    타임리프 전체깜빡임 없이 일부분만 변경되게 하는 기능 ?? kt enterprise
    화면은 이쁜데 서비스의 접근성이 떨어진다
+
+   타임리프는 프론트 쪽
+   
