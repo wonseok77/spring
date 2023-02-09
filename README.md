@@ -212,11 +212,12 @@ transaction annotation만으로 자동 commit rollback이 된다
    @RequestMapping(value = "/hello", method = RequestMethod.GET) value는 요청받을 url, method는 어떤 요청으로 받을지(GET, POST, PUT, DELETE등) : 
    특정 url로 요청을 보내면 Controller에서 어떠한 방식으로 처리할지 정의한다. 들어온 요청을 특정 메서드와 매핑하기위해 사용하는것
    
-   @ResponseBody : 비동기통신을 하기위해서 클라이언트에서 서버로 요청을 보낼때 본문에 데이터를 담아서 보내는 방식(JSON, XML등)
-   @ModelAttribute : 메서드의 파라미터에 사용시에는 사용자가 요청시 전달하는 값을 오브젝트 형태로 매핑해주는 어노테이션이다
-   @RequestParam  
-   @Repository  
-   @Override  
-   @Alias  
-   @Transactioanl  
-   @Service  
+   @ResponseBody : 비동기통신을 하기위해서 클라이언트에서 서버로 요청을 보낼때 본문에 데이터를 담아서 보내는 방식(JSON, XML등)  
+   @ModelAttribute : 메서드의 파라미터에 사용시에는 사용자가 요청시 전달하는 값을 오브젝트 형태로 매핑해주는 어노테이션이다  
+   @RequestParam : @RequestParam 어노테이션은 사용자가 요청시 전달하는 값을 Handler(Controller)의 매개변수로 1:1 맵핑할때 사용되는 어노테이션이다  
+   @Repository : @Repository, @service 어노테이션은 해당 클래스를 루트 컨테이너에 빈(Bean) 객체로 생성해주는 어노테이션입니다  
+   @Alias : @Alias는 mybatis에서 지원하는 어노테이션으로 TypeAlias, 즉 별칭을 지정할 때 사용합니다. setTypeAliasesPackage() 메서드를 통해 패키지 경로를 정해두면 패키지 내에
+               @Alias("별칭") 어노테이션이 지정된 클래스는 매퍼파일에서 별칭으로 해당 클래스를 매핑해줍니다.
+   
+   @Transactioanl : @Transactional을 사용하여 트랜잭션에 대한 전파, 격리, 시간 초과, 읽기 전용 및 롤백 조건을 설정할 수 있다. 
+   @Service : @Repository, @service 어노테이션은 해당 클래스를 루트 컨테이너에 빈(Bean) 객체로 생성해주는 어노테이션입니다  
