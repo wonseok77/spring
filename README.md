@@ -205,10 +205,15 @@ transaction annotation만으로 자동 commit rollback이 된다
    =======================================
    Annotation 정리
    @Controller  
-   @Autowired  
-   @RequestMapping  
-   @ResponseBody  
-   @ModelAttribute  
+   
+   @Autowired  : 타입으로 의존성을 주입  
+   @Resource : 이름으로 의존성을 주입  
+   
+   @RequestMapping(value = "/hello", method = RequestMethod.GET) value는 요청받을 url, method는 어떤 요청으로 받을지(GET, POST, PUT, DELETE등) : 
+   특정 url로 요청을 보내면 Controller에서 어떠한 방식으로 처리할지 정의한다. 들어온 요청을 특정 메서드와 매핑하기위해 사용하는것
+   
+   @ResponseBody : 비동기통신을 하기위해서 클라이언트에서 서버로 요청을 보낼때 본문에 데이터를 담아서 보내는 방식(JSON, XML등)
+   @ModelAttribute : 메서드의 파라미터에 사용시에는 사용자가 요청시 전달하는 값을 오브젝트 형태로 매핑해주는 어노테이션이다
    @RequestParam  
    @Repository  
    @Override  
