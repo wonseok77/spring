@@ -204,14 +204,14 @@ transaction annotation만으로 자동 commit rollback이 된다
    
    =======================================
    Annotation 정리
-   @Controller
-   @Autowired
-   @RequestMapping
-   @ResponseBody
-   @ModelAttribute
-   @RequestParam
-   @Repository
-   @Override
-   @Alias
-   @Transactioanl
-   @Service
+   @Controller  
+   @Autowired  
+   @RequestMapping  
+   @ResponseBody  
+   @ModelAttribute  
+   @RequestParam  
+   @Repository  
+   @Override  
+   @Alias  
+   @Transactioanl  
+   @Service  
