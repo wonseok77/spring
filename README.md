@@ -219,5 +219,5 @@ transaction annotation만으로 자동 commit rollback이 된다
    @Alias : @Alias는 mybatis에서 지원하는 어노테이션으로 TypeAlias, 즉 별칭을 지정할 때 사용합니다. setTypeAliasesPackage() 메서드를 통해 패키지 경로를 정해두면 패키지 내에
                @Alias("별칭") 어노테이션이 지정된 클래스는 매퍼파일에서 별칭으로 해당 클래스를 매핑해줍니다.
    
-   @Transactioanl : @Transactional을 사용하여 트랜잭션에 대한 전파, 격리, 시간 초과, 읽기 전용 및 롤백 조건을 설정할 수 있다. 
+   @Transactioanl : @Transactional을 사용하여 트랜잭션에 대한 전파, 격리, 시간 초과, 읽기 전용 및 롤백 조건을 설정할 수 있다     
    @Service : @Repository, @service 어노테이션은 해당 클래스를 루트 컨테이너에 빈(Bean) 객체로 생성해주는 어노테이션입니다  
