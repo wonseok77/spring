@@ -201,3 +201,17 @@ transaction annotation만으로 자동 commit rollback이 된다
 
    타임리프는 프론트 쪽
    
+   
+   =======================================
+   Annotation 정리
+   @Controller
+   @Autowired
+   @RequestMapping
+   @ResponseBody
+   @ModelAttribute
+   @RequestParam
+   @Repository
+   @Override
+   @Alias
+   @Transactioanl
+   @Service
