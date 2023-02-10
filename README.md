@@ -230,4 +230,4 @@ transaction annotation만으로 자동 commit rollback이 된다
    header와 body를 다 갖고있다 head태그와 body태그를 따로 가지고있을 필요가 없이 layout태그를 가지고 있어야 한다  
    javascript나 css는 head태그에 보통 써준다 layout fragment 이름을 지정해두고 다른거에서 가져다가 쓸 수 있게 한다  
    폴더명 파일명
-   
+     
