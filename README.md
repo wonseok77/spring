@@ -221,3 +221,13 @@ transaction annotation만으로 자동 commit rollback이 된다
    
    @Transactioanl : @Transactional을 사용하여 트랜잭션에 대한 전파, 격리, 시간 초과, 읽기 전용 및 롤백 조건을 설정할 수 있다     
    @Service : @Repository, @service 어노테이션은 해당 클래스를 루트 컨테이너에 빈(Bean) 객체로 생성해주는 어노테이션입니다  
+     
+     
+   spring spel $를 통해 데이터를 처리하는것(EL 표기법 spring EL을 타임리프는 지원한다)    
+   EL이 데이터만 조작할수있는것이아니라 태그와 함께 반복적인 조건을 넣을수 있다 each를 가지고 있다    
+   JSP는 껍데기를 만들어서 고정된 화면을 include하고있었다  
+   thymeleaf는 layout이다 thymeleaf를 사용하면 백앤드가 편하다  
+   header와 body를 다 갖고있다 head태그와 body태그를 따로 가지고있을 필요가 없이 layout태그를 가지고 있어야 한다  
+   javascript나 css는 head태그에 보통 써준다 layout fragment 이름을 지정해두고 다른거에서 가져다가 쓸 수 있게 한다  
+   폴더명 파일명
+   
