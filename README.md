@@ -4,7 +4,7 @@ AOP => 모듈화 해서 관리, 비즈니스 문제 해결 관점에서 프로�
   공통관심사항  
   핵심관심사항  
 
-인프런 김영한, 스노우플레이크, 데이터이쿠 core designer, MLops, ML, Advance designer, AWS, plugin, SKT
+스노우플레이크, 데이터이쿠 core designer, MLops, ML, Advance designer, AWS,
     
   
   공통관심사항을 공유해서 핵심관심사항에서 관리  
