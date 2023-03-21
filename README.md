@@ -4,14 +4,14 @@ AOP => 모듈화 해서 관리, 비즈니스 문제 해결 관점에서 프로�
   공통관심사항  
   핵심관심사항  
 
-스노우플레이크, 데이터이쿠 core designer, MLops, ML, Advance designer, AWS,
+스노우플레이크, 데이터이쿠 core designer, MLops, ML, Advance designer, AWS, 협업필터링
     
   
   공통관심사항을 공유해서 핵심관심사항에서 관리  
   
 1. Advice  
 언제 어떠한 기능의 공통 관심로직을 핵심로직에 적용할지를 정의한다.  
-spring AOP의 경우 5가지의 advice가 존재한다.  
+spring AOP의 경우 5가지의 advice가 존재한다.    
 
 2. Joinpoint
 실행시의 처리 플로우에서 Advice를 위빙하는 포인트를 Joinpoint라고 한다.  
@@ -34,7 +34,7 @@ Advisor는 스프링 AOP에만 있는 것인데, 관점 지향에서 '관점'을
 Spring AOP는 Aspect를 일반적인 자바 클래스로 구현한다.  
 
 6. Weaving  
-Advice를 핵심 로직 코드에 적용하는 것   
+Advice를 핵심 로직 코드에 적용하는 것    
 
 ** 시험 나옴 **  
 MVC에서 원래는 controller가 요청을 다 받는데 ★☆dispatcher Servlet☆★이 spring framework에서는 client의 요청을 받는다    
